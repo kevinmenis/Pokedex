@@ -1,0 +1,50 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 20vh;
+  user-select: none;
+}
+
+main {
+  margin-top: 70px; /* Añade un margen superior para evitar que el contenido quede detrás del navbar */
+  padding: 2rem; /* Agrega espacio interno al contenido */
+}
+
+@media (min-width: 576px) {
+  /* Cambia a 2 columnas en pantallas más anchas */
+  .pokemon-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  /* Cambia a 3 columnas en pantallas más anchas */
+  .pokemon-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  /* Cambia a 4 columnas en pantallas más anchas */
+  .pokemon-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
