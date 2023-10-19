@@ -3,11 +3,12 @@
 - En esta pokedex vas a encontrar funciones como:
 
 - Un buscador en tiempo real.
-- Poder buscar por nombre o id del pokémon
-- Filtros de búsquedas por tipo.
+- Poder buscar por nombre o id del pokémon.
+- Filtros de búsquedas por tipo y generación.
 - Poder ordenar:
   Alfabeticamente ascendente o descendente.
   Numericamente ascendente o descendente.
+- Información del pokémon seleccionado.
 
 - Para ejecutarlo la App, en la terminal: npm run dev
 

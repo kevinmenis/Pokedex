@@ -1,0 +1,90 @@
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.carousel-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.pokemon-image img {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.carousel-button.prev {
+  position: absolute;
+  left: 0;
+}
+
+.carousel-button.next {
+  position: absolute;
+  right: 0;
+}
+
+.carousel-content {
+  text-align: center;
+}
+
+.carousel-button {
+  display: block;
+  background-color: #242424;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative; 
+}
+
+.carousel-button:hover {
+  background-color: #303030;
+}
+
+.pokemon-stats {
+  flex: 2;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.pokemon-stats ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pokemon-stats li {
+  margin-bottom: 5px;
+}
+
+.stat-bar {
+  width: 100%;
+  background-color: #ccc;
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.stat-bar-fill {
+  height: 100%;
+  background-color: #30a7d7;
+  border-radius: 5px;
+  text-align: right;
+  padding-right: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.stat-value {
+  margin-left: 10px;
+}

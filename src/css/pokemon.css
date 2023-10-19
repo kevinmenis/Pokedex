@@ -4,6 +4,7 @@
   gap: 60px; /* Espacio entre las tarjetas */
   justify-items: center; /* Centra horizontalmente los items en las columnas */
   margin: 30px; /* Margen externo para el contenedor */
+  margin-top: 150px;
 }
 
 .pokemon-card {

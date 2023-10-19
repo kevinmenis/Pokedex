@@ -70,8 +70,6 @@ export function styleTypes(type) {
       };
     case "flying":
       return {
-        /* backgroundColor: "#98A8F0",
-        color: "#fff", */
         background: "linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%)",
         backgroundColor: "#3dc7ef",
         color: "#212121",
@@ -88,7 +86,6 @@ export function styleTypes(type) {
       };
     case "ground":
       return {
-        /* backgroundColor: "#E9D6A4", */
         background: "linear-gradient(180deg, #f7de3f 50%, #ab9842 50%)",
         backgroundColor: "#f7de3f",
         color: "#212121",

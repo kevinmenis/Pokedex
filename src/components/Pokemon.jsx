@@ -2,23 +2,30 @@ import { POKE_IMG } from '../api/endpoint'
 import { nameTypes, styleTypes } from '../utils/validations/Types'
 import { formatedIdPokemon, formatedNamePokemon } from '../utils/Formatting'
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import '../css/pokemon.css'
 
 export function PokemonCard({ name, id, types, urlImgPokemon }) {
   return (
-    <div key={id} className="pokemon-card">
-      <img src={urlImgPokemon} alt={name} />
-      <span>N.° {id}</span>
-      <h3>{name}</h3>
-      {types.map((type, typeIndex) => (
-        <span
-          className="type-label"
-          key={typeIndex}
-          style={styleTypes(type.type.name)}>
-          {nameTypes(type.type.name)}
-        </span>
-      ))}
-    </div>
+    <Link
+      style={{ textDecoration: "none" }}
+      to={`/pokedex/${name}`}
+    >
+      <div key={id} className="pokemon-card">
+        <img src={urlImgPokemon} alt={name} />
+        <span>N.° {id}</span>
+        <h3>{name}</h3>
+        {types.map((type, typeIndex) => (
+          <span
+            className="type-label"
+            key={typeIndex}
+            style={styleTypes(type.type.name)}
+          >
+            {nameTypes(type.type.name)}
+          </span>
+        ))}
+      </div>
+    </Link>
   );
 }
 

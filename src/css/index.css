@@ -21,6 +21,7 @@ body {
   min-width: 320px;
   min-height: 20vh;
   user-select: none;
+  background-color: #242424;
 }
 
 main {
