@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import imgSearch from '../assets/search.png'
+import "../css/header.css";
 
 function Header({ filter, setFilter }) {
 
